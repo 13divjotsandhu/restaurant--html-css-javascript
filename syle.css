@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Divjot Singh 026 */
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+/* Navigation */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed ;
+  width: 100%;
+  background: rgb(246, 246, 97);
+  height: 70px;
+  z-index: 12;
+  opacity: 1px  ;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  margin-right: 40px;
+  font-size: 1.4rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #6f1717;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color:  rgb(113, 104, 104);
+  transition: color 0.3s ease-in-out;
+}
+
+.logo{
+    font-size: 2.3rem;  
+    order: -10;
+    margin-top: .5rem ;
+    
+}
+.container {
+  max-width: 14000px;
+  margin: 0 auto;
+  color: rgb(43, 20, 20);
+
+}
+
+/* Hero Section */
+#container .hero {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  color: rgb(70, 45, 45);
+  gap: 20px;
+
+}
+.tag {
+  background-color: #ff0000;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  align-self: flex-start;
+}
+
+.hero_content h1 {
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.explore_btn {
+  background: #c3c3c6;
+  align-self: flex-start;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  
+}
+.explore_btn  a {
+    text-decoration: none;
+    color: #6f1717;
+    font-weight: 900;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  
+
+.hero_image{
+  margin-top: 5rem;
+
+}
+
+/* Features Section */
+.features {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.feature {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  transition: 0.2s ease-in-out;
+}
+.feature img {
+  width: 72px;
+}
+.feature:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.divider {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Menu Section */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px ;
+  align-items: center;
+}
+
+.menu .tag:hover{
+  transition: 0.2s ease-in-out;
+ color: #000000;
+ background: #c3c3c6;
+
+}  
+.menu .tag {
+  align-self: center;
+  
+}
+
+.food-menu-container {
+  
+  max-width:50rem;  
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin : auto 1.5rem;
+  padding: 5px;
+   
+}
+
+
+.food-menu-item {
+  display: flex;
+
+  justify-content: space-evenly;
+  margin-bottom:2rem;
+  
+}
+
+.food-description {
+  font-size: 1.3rem;
+  margin: auto 3.5rem;
+}
+
+.food-description p {
+  font-size:1.3rem;
+  color: #555;
+  font-weight: 500;
+  
+}
+
+.food-description .food-price {
+  color: #117932;
+  font-weight: 700;
+  
+
+}
+
+
+/* ......//about us//...... */
+
+#about {
+  
+  padding: 90px ;
+  background: hsl(240, 11%, 96%);;
+  font-size: 4rem;
+  margin: auto;
+}
+
+
+#about h2 {
+  
+  align-items: center;
+  font-size: 3.4rem;
+  
+
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1px;
+}
+
+#about .small {
+  font-size: 2.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+/* Footer Section */
+footer {
+  background-color: rgb(246, 246, 97);
+  padding: 50px ;
+  width: 100vw;
+  bottom: 0;
+  width: 100%; 
+  
+  
+  }
+
+
+.footer_container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link_lists h3,
+.news_letter h3 {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.link_lists ul {
+  list-style: none;
+}
+
+.link_lists ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.news_letter input {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 786px) {
+
+  .navbar {
+    opacity: 0.95;
+  }
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 11; /* more than lines as we have to put the container upward */
+    opacity: 0;
+  }
+
+   .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+  
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 30px;
+    border-radius: 9px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 200%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .navbar .logo{
+    position: absolute;
+    top: -1rem;
+    right: -2rem;
+    font-size: 3rem;
+  }
+
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+      background-color: red;
+    }
+  
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      display: none;
+      background-color: red;
+    }
+  
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+      background-color: red;
+    }
+  
+
+  .hero {
+    flex-direction: column;
+  }
+  .hero_image {
+    display: flex;
+    justify-content: center;
+  }
+  .hero_image img {
+    width: 80%;
+  } 
+  .hero_content {
+    gap: 10px;
+    padding: 0 20px;
+  }
+  .hero_content h1 {
+    font-size: 32px;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  
+  .food-menu-container img {
+    margin: auto;
+  }
+
+  .food-menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .footer_container {
+    flex-direction: column; 
+    text-align: center;
+    
+  }
+
+  
+}
